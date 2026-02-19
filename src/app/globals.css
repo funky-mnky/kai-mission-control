@@ -628,6 +628,8 @@ html, body {
 .day-event.cron { background: rgba(139, 92, 246, 0.2); color: var(--purple); }
 .day-event.deadline { background: rgba(239, 68, 68, 0.2); color: var(--red); }
 .day-event.reminder { background: rgba(245, 158, 11, 0.2); color: var(--orange); }
+.day-event.personal { background: rgba(16, 185, 129, 0.2); color: var(--green); }
+.day-event.interview { background: rgba(236, 72, 153, 0.2); color: var(--pink); }
 
 .calendar-sidebar-panel {
   background: var(--bg-card);
@@ -672,6 +674,10 @@ html, body {
 .cal-event-item.deadline .cal-event-time { color: var(--red); }
 .cal-event-item.reminder { border-left: 3px solid var(--orange); }
 .cal-event-item.reminder .cal-event-time { color: var(--orange); }
+.cal-event-item.personal { border-left: 3px solid var(--green); }
+.cal-event-item.personal .cal-event-time { color: var(--green); }
+.cal-event-item.interview { border-left: 3px solid var(--pink); }
+.cal-event-item.interview .cal-event-time { color: var(--pink); }
 
 /* ================= MEMORY BROWSER ================= */
 .memory-layout {

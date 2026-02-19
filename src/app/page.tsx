@@ -92,7 +92,7 @@ export default function MissionControl() {
       description,
       assignee,
       priority,
-      column: 'Backlog',
+      column: 'Not started',
       created: new Date().toISOString().split('T')[0],
       tags: tagsStr.split(',').map(t => t.trim()).filter(Boolean),
       _local: true,
@@ -335,7 +335,7 @@ function DashboardScreen({ tasks, events, activeTasks, inProgressCount, upcoming
                 <div className="kai-avatar">KAI</div>
                 <div className="kai-status-text">
                   <h4>Currently Working On</h4>
-                  <p>Analyzing customer health score data for CS team sync. Also continuing AI SDR tool research — comparing 11x, Artisan, and Regie.ai for Owner.com&apos;s outbound motion. Built this Mission Control dashboard earlier today.</p>
+                  <p>Rebuilt weekly prep skill with real API integrations. Mapped all 6 GTM Big Rocks from Notion. Set up CRO Weekly Brief cron for Sundays. Integrated MBR action items. Now updating Mission Control with live data from Kyle&apos;s systems.</p>
                   <div className="kai-tasks">
                     {kaiTasks.map(t => (
                       <span className="kai-task-tag" key={t.id}>{t.title}</span>
@@ -403,7 +403,7 @@ function TasksScreen({ tasks, onOpenDetail, onAddTask }: {
                       )}
                     </div>
                   ))}
-                  {col === 'Backlog' && (
+                  {col === 'Not started' && (
                     <button className="add-task-btn" onClick={onAddTask}>+ Add Task</button>
                   )}
                 </div>
